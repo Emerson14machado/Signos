@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecolha Caso</title>
+</head>
+
+<body>
+
+
+    <h1>Signo</h1>
+
+    <div class="geral">
+        <input class="ii" type="text" id="signo">
+
+        <button class="btn" onclick=" escolhaSigno()">Buscar</button>
+
+        <div class="immg" id="imagem">
+            <img id="img01" src="" width="300px" alt="">
+        </div>
+
+
+
+
+
+
+
+        <div class="frrase" id="frase">
+
+
+
+            <script>
+
+                function escolhaSigno() {
+                    var imagem = document.getElementById('img01')
+                    var texto
+                    var signo = document.querySelector("#signo").value
+
+                    switch (signo) {
+                        case "Áries":
+                            texto = "Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes."
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/11/02184353/aries.jpg"
+                            break
+
+                        case "Touro":
+                            texto = "Tão calmos e apegados, mas pisa no calo deles para ver o que acontece. Não vamos esquecer da fome sem fim que eles têm!"
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/12/03131837/horos-touro.jpg"
+                            break
+
+                        case "Gêmeos":
+                            texto = "Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles. "
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/10/02192332/gemeos.jpg"
+                            break
+
+                        case "Câncer":
+                            texto = "Dono de grande inteligência emocional, o canceriano rapidamente corta as bobagens e vai direto ao “X” da questão."
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/10/02185511/Cancer.jpg"
+                            break
+
+                        case "Leão":
+                            texto = " O meu silêncio significa um milhão de pensamentos."
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/12/02192750/leao.jpg"
+                            break
+
+                        case "Virgem":
+                            texto = "A pessoa de Virgem é confiável, discreta e não costuma trair a confiança de ninguém."
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/12/03132620/virgem.jpg"
+                            break
+
+
+                        case "Libra":
+                            texto = "Minha essência é esperar o melhor das pessoas."
+                            imagem.src = "https://vejasp.abril.com.br/wp-content/uploads/2018/09/libra1.jpg?quality=70&strip=info&w=800&resize=1200,800"
+                            break
+
+                        case "Escorpião":
+                            texto = "Sinto mais do que demonstro e sei mais do que aparento."
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/12/02190753/escorpiao.jpg"
+                            break
+
+                        case "Sagitário":
+                            texto = "Sagitário é indomável feito o vento, marinheiro dos sete mares. É aventureiro, filho do mundo, amante do próprio amor. "
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/12/03131017/sagitario.jpg"
+                            break
+
+
+                        case "Capricórnio":
+                            texto = "Ou você faz uma coisa bem feita ou não faz."
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/11/02190302/capricornio.jpg"
+                            break
+
+                        case "Aquário":
+                            texto = "Eu busco a mim mesmo através da fraternidade."
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/11/02183301/Aquario.jpg"
+                            break
+
+                        case "Peixes":
+                            texto = "Ter um amigo de Peixes é algo muito valioso e deve ser mantido para a vida toda!"
+                            imagem.src = "https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2021/12/03125928/peixes.jpg"
+                            break
+
+
+                        default:
+                            texto = "Insira um signo existente"
+
+                    }
+                    document.getElementById("frase").innerHTML = texto
+
+                }
+
+            </script>
+
+
+
+
+        </div>
+
+    </div>
+    <footer>
+  Criador:Émerson H.S Machado &reg; &copy;|E-mail:emerson14machado@gmail.com
+    </footer>
+</body>
+
+</html>
